@@ -7,7 +7,7 @@
       <span class="nearCity">[ 东方 基隆 嘉义市 ]</span>
     </div>
     <div class="login">
-      <nuxt-link to="" style="color:#37cab5;">立即登录</nuxt-link>
+      <nuxt-link to="~/pages/login" style="color:#37cab5;">立即登录</nuxt-link>
       <nuxt-link to="" style="color:#999;">注册</nuxt-link>
     </div>
   </div>

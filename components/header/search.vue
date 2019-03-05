@@ -11,6 +11,11 @@
       >
         <el-button slot="append" icon="el-icon-search"></el-button>
       </el-input>
+      <div class="multi">
+        <span v-for="item in multiList" :key="item" class="item">{{
+          item
+        }}</span>
+      </div>
     </div>
   </div>
 </template>
@@ -20,7 +25,15 @@
     components: {},
     data() {
       return {
-        input5: ""
+        input5: "",
+        multiList: [
+          "世界之窗",
+          "深圳欢乐谷",
+          "深圳野生动物园",
+          "锦绣中华民俗文化村",
+          "海上田园",
+          "5D星光影错视觉馆"
+        ]
       };
     }
   };
@@ -28,7 +41,9 @@
 
 <style scoped>
   .container {
+    height: 130px;
     display: flex;
+    padding: 40px 200px;
   }
   .container img {
     width: 126px;
@@ -36,6 +51,14 @@
   }
   .container > .search {
     margin-left: 150px;
-    width: 400px;
+    width: 530px;
+  }
+  .container > .search > .multi {
+    font-size: 12px;
+    color: #999;
+    margin: 10px;
+  }
+  .container > .search > .multi > .item {
+    margin: 0 5px;
   }
 </style>

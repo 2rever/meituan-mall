@@ -5,8 +5,11 @@
           <Nav />
 
     </div>
-    <div class="down">
+    <div class="middle">
       <Search />
+    </div>
+    <div class="down">
+      <Menu />
     </div>
   </div>
   
@@ -16,12 +19,12 @@
   import City from "~/components/header/city.vue";
   import Nav from "~/components/header/Nav.vue";
   import Search from "~/components/header/search.vue";
-    // import Search from "~/components/header/search.vue";
+    import Menu from "~/components/header/menu.vue";
   export default {
     components: {
         City,
         Nav,
-        // Logo,
+        Menu,
         Search
    }
   }
@@ -35,10 +38,14 @@
     height: 40px;
     background-color: #f8f8f8;
   }
+  .middle {
+    /* height: 150px; */
+     /* padding: 10px 200px; */
+    /* background-color: #fff; */
+   
+    /* outline: 1px solid lightgreen; */
+  }
   .down {
-    height: 150px;
-     padding: 10px 200px;
-    background-color: #fff;
-    outline: 1px solid lightgreen;
+  /* box-shadow: 0 2px 27px 0 rgba(0,0,0,.1) */
   }
 </style>
