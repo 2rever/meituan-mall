@@ -33,7 +33,7 @@
     display: flex;
     padding: 0 200px;
     vertical-align: middle;
-    box-shadow: 10px 5px 5px red;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
   }
   .container > .left {
     width: 230px;

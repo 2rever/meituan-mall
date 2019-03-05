@@ -1,5 +1,11 @@
 <template>
-  <div class="container"></div>
+  <div class="container">
+    <ul>
+      <li>美食</li>
+      <li>外卖</li>
+      <li>酒店</li>
+    </ul>
+  </div>
 </template>
 
 <script>
@@ -13,7 +19,6 @@
 
 <style scoped>
   .container {
-    height: 600px;
-    background-color: #f8f8f8;
+    padding: 10px 200px;
   }
 </style>
