@@ -1,16 +1,16 @@
 <template>
   <div class="container">
-    <ul>
-      <li>美食</li>
-      <li>外卖</li>
-      <li>酒店</li>
-    </ul>
+   <Menus />
+  <MenusCards />
   </div>
 </template>
 
 <script>
+  import Menus from "~/components/main/menus.vue";
+  import MenusCards from "~/components/main/menusCards.vue";
+
   export default {
-    components: {},
+    components: {Menus,MenusCards},
     data() {
       return {};
     }
@@ -19,6 +19,7 @@
 
 <style scoped>
   .container {
-    padding: 10px 200px;
+    display: flex;
+    padding: 0 200px;
   }
 </style>
